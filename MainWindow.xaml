@@ -6,11 +6,20 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="textFile">
-        <Button x:Name="btnSelect" Content="打开文件" HorizontalAlignment="Left" Margin="560,265,0,0" VerticalAlignment="Top" Width="90" Height="45" Click="btnSelect_Click"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="70,340,0,0" VerticalAlignment="Top" Height="55" Width="180"/>
-        <TextBox x:Name="textFile1" HorizontalAlignment="Left" Height="45" Margin="70,265,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="425" TextChanged="TextBox_TextChanged"/>
-        <Image HorizontalAlignment="Left" Height="195" Margin="70,45,0,0" VerticalAlignment="Top" Width="295"/>
-
+    <Grid x:Name="textFile" Margin="0,0,0,-8" HorizontalAlignment="Right" Width="841">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="440*"/>
+            <ColumnDefinition Width="379*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn02" Content="Button" HorizontalAlignment="Left" Margin="50,166,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.8,0.474" Grid.Column="1" Click="btn02_Click"/>
+        <Button x:Name="btn03" Content="Button" HorizontalAlignment="Left" Margin="50,265,0,0" VerticalAlignment="Top" Width="135" Grid.Column="1" Click="btn03_Click"/>
+        <Label Content="请选择list" HorizontalAlignment="Left" Margin="70,50,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="请选择物资部证书文件夹" HorizontalAlignment="Left" Margin="70,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="请选择要保存的位置文件夹" HorizontalAlignment="Left" Margin="70,235,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn01" Content="Button" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.533,2.053" Grid.Column="1" Click="btn01_Click"/>
+        <TextBox x:Name="txtfile01" HorizontalAlignment="Left" Height="23" Margin="70,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="415" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtfile02" HorizontalAlignment="Left" Height="23" Margin="70,167,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="415" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtfile03" HorizontalAlignment="Left" Height="23" Margin="70,265,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="415" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="70,335,0,400" TextWrapping="Wrap" Text="TextBox" Width="570" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
